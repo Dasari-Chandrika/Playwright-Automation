@@ -1,0 +1,28 @@
+{
+  "dataSets": [
+    {
+      "url": "https://demoqa.com/automation-practice-form",
+      "firstName": "Chandrika",
+      "lastName": "Dasari",
+      "email": "chandrika@gmail.com",
+      "mobile": "9999999999",
+      "successMessage": "Thanks for submitting the form"
+    },
+    {
+      "url": "https://demoqa.com/automation-practice-form",
+      "firstName": "Meghana",
+      "lastName": "Pullalarevu",
+      "email": "meghana@gmail.com",
+      "mobile": "8888888888",
+      "successMessage": "Thanks for submitting the form"
+    },
+    {
+      "url": "https://demoqa.com/automation-practice-form",
+      "firstName": "Gayathri",
+      "lastName": "Araveti",
+      "email": "gayathri@gmail.com",
+      "mobile": "7777777777",
+      "successMessage": "Thanks for submitting the form"
+    }
+  ]
+}
