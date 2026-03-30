@@ -1,0 +1,22 @@
+git clone cloning path
+git status
+git pull
+git add --all
+git commit -m 'commit message'
+git push
+git merge
+git stash
+git stash pop
+git checkout branchName or 'branchName'
+git checkout -b 'branchName'
+
+
+
+If we want to skip any tests then use
+test('test1'
+test('test2'
+test.skip('test3'
+
+If we want to execute only one test
+test.only('test1'
+test('test2'
