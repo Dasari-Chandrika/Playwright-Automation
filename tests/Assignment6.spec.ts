@@ -14,9 +14,7 @@ test("Assignment 6: Negative – Border validation on required fields", async ({
   // Verify red borders (required validation)
   await practiceForm.expectBorderError(practiceForm.firstNameInput);
   await practiceForm.expectBorderError(practiceForm.lastNameInput);
- // await practiceForm.expectBorderError(practiceForm.userEmailInput);
   await practiceForm.expectBorderError(practiceForm.mobileInput);
 
-  // Modal should NOT appear
   await expect(page.getByText(formData.assertion)).not.toBeVisible();
 });

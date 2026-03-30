@@ -11,15 +11,8 @@ test('test', async ({ page }) => {
   await page.locator('#dateOfBirthInput').click();
   await page.getByRole('gridcell', { name: 'Choose Tuesday, March 10th,' }).click();
   await page.locator('div').filter({ hasText: /^Reading$/ }).click();
-  // await page.locator('input[type="file"]').setInputFiles({
-  //   name: "git commands.txt",
-  //   mimeType: "text/plain",
-  //   buffer: Buffer.from("test file content")
-  // });
-  // Build correct path (file must exist in this folder)
+ 
   const filePath = "C:/Users/dchandrika/OneDrive - The Emmes Company, LLC/Desktop/Assignment/fileUpload/git commands.txt";
-
-  // Upload using the real input element, not the button
   await page.locator('input[type="file"]').setInputFiles(filePath);
 
   await page.locator('#state svg').click();

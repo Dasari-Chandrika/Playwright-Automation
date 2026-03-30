@@ -1,17 +1,16 @@
 import { Page, expect, Locator } from "@playwright/test";
+import formData from "../testdata/practice-form.json";
 
 export class PracticeFormPage {
 
   firstNameInput;
   lastNameInput;
-  //userEmailInput;
   mobileInput;
   submitBtn;
 
   constructor(private page: Page) {
     this.firstNameInput = page.getByRole("textbox", { name: "First Name" });
     this.lastNameInput = page.getByRole("textbox", { name: "Last Name" });
-    //this.userEmailInput = page.getByRole("textbox", { name: "name@example.com" });
     this.mobileInput = page.getByRole("textbox", { name: "Mobile Number" });
 
     this.submitBtn = page.getByRole("button", { name: "Submit" });
@@ -23,7 +22,7 @@ export class PracticeFormPage {
 
         
     async expectBorderError(input: Locator) {
-        await expect(input).toHaveCSS("border-color", "rgb(220, 53, 69)");
+        await expect(input).toHaveCSS("border-color", formData.borderColor);
 
     }
 
