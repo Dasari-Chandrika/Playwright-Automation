@@ -1,6 +1,6 @@
 import { test, expect } from "@playwright/test";
 test.describe("Multiple navigations", () =>{ 
-  test("Navigate to Elements → Text Box", async ({ page }) => {
+  test("Navigate to Elements → Text Box @smoke", async ({ page }) => {
     await page.goto("https://demoqa.com/");
     await page.getByRole('link', { name: 'Elements' }).click();
     await page.getByRole('listitem').filter({ hasText: 'Text Box' }).click();
