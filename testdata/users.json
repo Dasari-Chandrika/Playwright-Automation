@@ -2,14 +2,15 @@
     "config": {
         "baseUrl": "https://parabank.parasoft.com/parabank/index.htm"
     },
+
     "user1": {
-        "username": "Chandrika",
-        "password": "12345678",
+        "username": "Vyshu",
+        "password": "87654321",
         "expected": "Account Services"
     },
     "user2": {
-        "username": "Gayathri",
-        "password": "gayathri123",
+        "username": "Chandu",
+        "password": "chandu@123",
         "expected": "Account Opened!"
     }
 }

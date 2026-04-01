@@ -3,7 +3,7 @@ import { Page, expect } from "@playwright/test";
 export class OpenAccountPage {
 
   constructor(private page: Page) {}
-
+  
   async navigateToOpenNewAccount() {
     const link = this.page.getByRole('link', { name: 'Open New Account' }).click();
   }

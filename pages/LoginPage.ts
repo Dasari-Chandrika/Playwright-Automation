@@ -26,6 +26,5 @@ export class LoginPage {
 
   async validateSuccess(expected: string) {
     await expect(this.page.getByRole('heading', { name: expected })).toBeVisible();
-    
   }
 }
